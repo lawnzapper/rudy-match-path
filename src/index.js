@@ -52,10 +52,10 @@ export const compilePath = (
 
 const toPathCache = {}
 
-export const compileParamsToPath = (path: string, params: Object = {}) => {
+export const compileParamsToPath = (path: string, params: Object = {}, options: Object = {}) => {
   const toPath = toPathCache[path] || pathToRegexp.compile(path)
   toPathCache[path] = toPath
-  return toPath(params)
+  return toPath(params, options)
 }
 
 const matchPath = (
