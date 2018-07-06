@@ -79,6 +79,6 @@
     ]
   },
   "dependencies": {
-    "path-to-regexp": "^1.7.0"
+    "path-to-regexp": "^2.2.1"
   }
 }
